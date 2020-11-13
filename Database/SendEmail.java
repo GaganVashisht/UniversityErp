@@ -10,13 +10,13 @@ public class SendEmail {
 	
 	public boolean sendDebardEmail(String gmail,String attendence,String date1,String date2)
 	{
-		try {  email=new Email("moneykaur2000@gmail.com","gagandeep22");
-	 	  email.setFrom("moneykaur2000@gmail.com","Chandigarh Group of Colleges");
+		try {  email=new Email(emailid,password);// write ur own email id and password from which u want to send mail
+	 	  email.setFrom(emailid,"Chandigarh Group of Colleges");
 	 	 email.setSubject("Attendece Report");
 	 	  email.setContent("<h1 style=\"text-align: center;\">You are debarded</h1><br><p style=\"font-size: 20px;\">As your Attendence is "+ attendence+" which is less then<span style=\"color: orange;\"> 75%</span>. The attendence is taken from "+date1+" to "+date2+".</p>"+
 
 "<br><p style=\"color: red;text-decoration: underline;text-background-color:yellow;font-size: 20px;\">So Clear your name from the debard list Quickly</p>","text/html");
-	 	  email.addRecipient(gmail); 
+	 	  email.addRecipient(gmail); // to whom u want to end the email
 	 	  email.send();
 	 	  
 	 	  }catch(Exception e) {
