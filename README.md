@@ -11,7 +11,4 @@
 ![Update Debarred](https://github.com/GaganVashisht/UniversityErp/blob/master/images/debarrd.PNG);
 ![Student_Attendence](https://github.com/GaganVashisht/UniversityErp/blob/master/images/StudentAttendence.PNG);
 ![Student_Tnfo](https://github.com/GaganVashisht/UniversityErp/blob/master/images/StudentInfo.PNG);
-
-
-
-
+![Setting](https://github.com/GaganVashisht/UniversityErp/blob/master/images/Settings.PNG);
