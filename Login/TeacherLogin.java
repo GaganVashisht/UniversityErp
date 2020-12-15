@@ -128,14 +128,14 @@ public class TeacherLogin extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				otp=SendEmail.generateOtp();
-				u.getinfo(usertext.getText(), "studentinfo");
-				String gmail=u.getGmailId();
-				new SendEmail().sendOtp(gmail, otp);
+// 				otp=SendEmail.generateOtp();
+// 				u.getinfo(usertext.getText(), "studentinfo");
+// 				String gmail=u.getGmailId();
+// 				new SendEmail().sendOtp(gmail, otp);
 				
 				
 				if(new UserLogin().check(usertext, passwordField, "FacultyLogin")) {
-					new Otp("").setVisible(true);
+					new TeacherMainPage1().setVisible(true);
 				    dispose();
 				}
 				else
